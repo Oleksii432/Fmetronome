@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MetronomeFragment">
+
+    <TableLayout
+        android:id="@+id/rhythmTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/rhythmLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Choose a rhythm:"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/rhythmSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp" />
+
+
+        <TableRow
+            android:id="@+id/beatRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/beatCircle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="Beat Indicator"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_circle_24" />
+
+
+            <ImageView
+                android:id="@+id/beatCircle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="Beat Indicator"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_circle_24" />
+
+
+            <ImageView
+                android:id="@+id/beatCircle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="Beat Indicator"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_circle_24" />
+
+
+            <ImageView
+                android:id="@+id/beatCircle4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="Beat Indicator"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_circle_24" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TableLayout
+        android:id="@+id/beatTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tempoValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:gravity="center_horizontal"
+            android:text="Tempo: 120 BPM"
+            android:textSize="34sp" />
+
+        <SeekBar
+            android:id="@+id/tempoSeekBar"
+            style="@style/SeekBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="42dp"
+            android:max="200"
+            android:progress="100" />
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/startStopBut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/butPlayStop"
+                android:contentDescription="Start/Stop"
+                app:icon="@drawable/outline_play_arrow_24"
+                app:iconGravity="textStart"
+                app:iconPadding="1dp"
+                app:iconSize="58dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/decreaseTempoBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/buttons"
+                android:text="-"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/coachBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/buttons"
+                android:contentDescription="coachBtn"
+                app:icon="@drawable/baseline_fitness_center_24"
+                app:iconGravity="textStart"
+                app:iconPadding="1dp"
+                app:iconSize="24dp" />
+
+
+            <Button
+                android:id="@+id/increaseTempoBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/buttons"
+                android:text="+"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/tapTempoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/buttons"
+                android:text="Tap Tempo"
+                android:textSize="16dp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

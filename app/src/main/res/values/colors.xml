@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="buttons">#54A4E3</color>
+    <color name="butPlayStop">#091347</color>
+    <color name="mainToolbar">#CCD2E7</color>
+    <color name="bottomToolbar">#CCD2E7</color>
+    <color name="relativeLayout">#CCD2E7</color>
+    <color name="windowBackground">#CCD2E7</color>
+
+    <color name="relativeLayoutNight">#26263A</color>
+    <color name="mainToolbarNight">#26263A</color>
+    <color name="bottomToolbarNight">#091347</color>
+
+    <color name="Green">#32ED0A</color>
+
+
+    <color name="seekbar_thumb_color">#908888</color>
+    <color name="seekbar_progress_color">#54A4E3</color>
+
+    <color name="flag_colorDay">#091347</color>
+    <color name="flag_colorNight">#54A4E3</color>
+    <color name="alert_dialog_colorDay">#CCD2E7</color>
+    <color name="alert_dialog_colorNight">#26263A</color>
+
+    <color name="switch_thumb_day">#091347</color>
+    <color name="switch_track_day">#54A4E3</color>
+    <color name="switch_thumb_night">#CCD2E7</color>
+    <color name="switch_track_night">#54A4E3</color>
+
+
+</resources>

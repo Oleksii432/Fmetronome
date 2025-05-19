@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Fmetronome" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="toolbarStyle">@style/CustomToolbar</item>
+        <item name="bottomNavigationStyle">@style/CustomBottomNavigation</item>
+
+
+        <item name="android:textColor">@color/black</item>
+
+
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+
+
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        <item name="android:tint">@color/black</item>
+
+
+        <item name="android:windowBackground">@color/windowBackground</item>
+
+    </style>
+
+    <style name="CustomToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/mainToolbar</item>
+    </style>
+
+    <style name="CustomSwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_day</item>
+        <item name="trackTint">@color/switch_track_day</item>
+    </style>
+
+    <style name="CustomBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/bottomToolbar</item>
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+    </style>
+
+    <style name="RelativeLayoutStyle">
+        <item name="android:background">@color/relativeLayout</item>
+    </style>
+
+    <style name="SeekBarStyle" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:thumbTint">@color/seekbar_thumb_color</item>
+        <item name="android:progressTint">@color/seekbar_progress_color</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorAccent">@color/flag_colorDay</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+
+    <style name="Theme.Fmetronome" parent="Base.Theme.Fmetronome" />
+</resources>

@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_metronome"
+        android:icon="@drawable/metronome"
+        android:title="Metronome" />
+    <item
+        android:id="@+id/nav_tuner"
+        android:icon="@drawable/music_tuning_fork"
+        android:title="Tuner" />
+</menu>
